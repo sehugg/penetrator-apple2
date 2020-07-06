@@ -8,7 +8,7 @@
 ;-----------------------------------------------------------------------------
 .segment "RODATA"
 
-.feature        string_escapes
+;.feature        string_escapes
 
 ; In game text
 textTopLine:      .asciiz "Stage  . Player - - Score      0"
@@ -20,7 +20,7 @@ textPlayer:       .asciiz "P L A Y E R  "
 ; title screen
 textHighScores:   .asciiz "High  Scores"
 textPhilip:       .asciiz " Written by - Philip Mitchell - "
-textCopyright:    .asciiz "** Copyright  \"Beam Software\" **"
+textCopyright:    .asciiz "** Copyright  'Beam Software' **"
 textApple2:       .asciiz "      Apple II version by       "
 textStefan:       .asciiz "    Stefan Wessels, Dec 2019    "
 textSupport:      .asciiz "     Lots of great Apple II     "
@@ -33,12 +33,12 @@ textGameOver:     .asciiz "********** GAME  OVER **********"
 textInstructions: .asciiz "INSTRUCTIONS"
 textPress:        .asciiz "PRESS"
 textUnderline:    .asciiz "-----"
-textOneTwo:       .asciiz "\"1\" OR \"2\" FOR NUMBER OF PLAYERS"
-textTrain:        .asciiz "\"T\"  FOR TRAINING CONTROL CENTER"
-textEdit:         .asciiz "\"E\" FOR THE LANDSCAPE EDITOR"
-textLoad:         .asciiz "\"L\"  TO LOAD ANOTHER LANDSCAPE"
-textSirens:       .asciiz "\"S\" SET AUDIO: "
-textQuit:         .asciiz "\"Q\" QUIT"
+textOneTwo:       .asciiz "'1' OR '2' FOR NUMBER OF PLAYERS"
+textTrain:        .asciiz "'T'  FOR TRAINING CONTROL CENTER"
+textEdit:         .asciiz "'E' FOR THE LANDSCAPE EDITOR"
+textLoad:         .asciiz "'L'  TO LOAD ANOTHER LANDSCAPE"
+textSirens:       .asciiz "'S' SET AUDIO: "
+textQuit:         .asciiz "'Q' QUIT"
 
 ; main menu audio options
 textAudio1:       .asciiz "ENGINE, SFX"

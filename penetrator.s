@@ -12,9 +12,13 @@
 .listbytes unlimited
 
 ;#resource "logo.hgr"
+;#resource "penetrator.cfg"
+;#define CFGFILE penetrator.cfg
 
 ;-----------------------------------------------------------------------------
-.segment "CODE"
+.segment "INIT"
+.segment "ONCE"
+.segment "STARTUP"
 
 ;-----------------------------------------------------------------------------
 jmp main                                        ; This ends up at $080d (sys 2061's target)
@@ -41,7 +45,7 @@ jmp main                                        ; This ends up at $080d (sys 206
 .include "logo.inc"                             ; The include to include the HGR image
 
 ;-----------------------------------------------------------------------------
-.segment "CODE"
+.segment "LOWCODE"
 
 ;-----------------------------------------------------------------------------
 .proc main

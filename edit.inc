@@ -6,7 +6,7 @@
 ; This is free and unencumbered software released into the public domain.
 
 ;-----------------------------------------------------------------------------
-.segment "CODE"
+.segment "LOWCODE"
 
 ;-----------------------------------------------------------------------------
 .proc editLoop
